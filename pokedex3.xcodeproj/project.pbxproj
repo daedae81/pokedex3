@@ -17,6 +17,7 @@
 		CD185ED21E62B1A3000B41BB /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = CD185ED11E62B1A3000B41BB /* pokemon.csv */; };
 		CD185EDA1E62BFC5000B41BB /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD185ED91E62BFC5000B41BB /* Pokemon.swift */; };
 		CDA321461E633704002D4BE3 /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA321451E633704002D4BE3 /* PokeCell.swift */; };
+		CDA321481E6350DD002D4BE3 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA321471E6350DD002D4BE3 /* csv.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		CD185ED11E62B1A3000B41BB /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 		CD185ED91E62BFC5000B41BB /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		CDA321451E633704002D4BE3 /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
+		CDA321471E6350DD002D4BE3 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				CD185EAF1E62AD3F000B41BB /* Info.plist */,
 				CD185EA31E62AD3E000B41BB /* AppDelegate.swift */,
 				CD185ED11E62B1A3000B41BB /* pokemon.csv */,
+				CDA321471E6350DD002D4BE3 /* csv.swift */,
 				CD185ED91E62BFC5000B41BB /* Pokemon.swift */,
 			);
 			name = Model;
@@ -235,17 +238,20 @@
 					CD185E9F1E62AD3E000B41BB = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = SW66WKJACT;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					CD185EB31E62AD3F000B41BB = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = SW66WKJACT;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = CD185E9F1E62AD3E000B41BB;
 					};
 					CD185EBE1E62AD3F000B41BB = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = SW66WKJACT;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = CD185E9F1E62AD3E000B41BB;
 					};
@@ -308,6 +314,7 @@
 				CD185EDA1E62BFC5000B41BB /* Pokemon.swift in Sources */,
 				CD185EA61E62AD3E000B41BB /* ViewController.swift in Sources */,
 				CD185EA41E62AD3E000B41BB /* AppDelegate.swift in Sources */,
+				CDA321481E6350DD002D4BE3 /* csv.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
