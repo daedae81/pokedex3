@@ -18,7 +18,14 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         collection.dataSource = self
         collection.delegate = self
     }
-   
+ 
+    //---
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        return 30
+    }
+  
+    //---
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PokeCell", for: indexPath) as? PokeCell {
@@ -29,26 +36,23 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
             return UICollectionViewCell()
         }
-
+   
+    //---
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
     }
-    
-       func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection: Int) -> Int {
-        
-        return 30
-        }
-    
+  
+    //---
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         
         return 1
     }
-    
+   
+    //---
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         return CGSize(width: 105, height: 105)
     }
         
-    }
-
+  }
 }
