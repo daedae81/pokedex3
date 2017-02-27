@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -141,11 +142,53 @@
                     <connections>
                         <outlet property="collection" destination="21B-eq-Awr" id="8U8-5z-JFn"/>
                         <outlet property="searchBar" destination="aqT-ef-s9B" id="84V-V9-luT"/>
+                        <segue destination="4HI-Hg-dlB" kind="show" identifier="PokemonDetailVC" id="XTz-do-8id"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--Pokemon DetailVC-->
+        <scene sceneID="Lg1-Xr-XPb">
+            <objects>
+                <viewController id="4HI-Hg-dlB" customClass="PokemonDetailVC" customModule="pokedex3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4jQ-58-YIG"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y9O-BM-MAK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UdF-pl-Hfb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLA-IH-gsy">
+                                <rect key="frame" x="119" y="312" width="136" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="136" id="eya-Wo-JTt"/>
+                                    <constraint firstAttribute="height" constant="43" id="qHP-wa-mEY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.54290194288740423" green="0.88604648305415112" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pLA-IH-gsy" firstAttribute="leading" secondItem="UdF-pl-Hfb" secondAttribute="leadingMargin" constant="103" id="2J2-x4-LS3"/>
+                            <constraint firstItem="Y9O-BM-MAK" firstAttribute="top" secondItem="pLA-IH-gsy" secondAttribute="bottom" constant="312" id="DDA-Bo-WpE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pLA-IH-gsy" secondAttribute="trailing" constant="104" id="Iz9-3Y-Yev"/>
+                            <constraint firstItem="pLA-IH-gsy" firstAttribute="centerX" secondItem="UdF-pl-Hfb" secondAttribute="centerX" id="PlK-1S-FYs"/>
+                            <constraint firstItem="pLA-IH-gsy" firstAttribute="centerY" secondItem="UdF-pl-Hfb" secondAttribute="centerY" id="RmZ-en-Oz9"/>
+                            <constraint firstItem="pLA-IH-gsy" firstAttribute="top" secondItem="4jQ-58-YIG" secondAttribute="bottom" constant="292" id="hOR-6S-4Yj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameLbl" destination="pLA-IH-gsy" id="Xp9-tC-fND"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6rG-Ec-dxL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="952.79999999999995" y="138.98050974512745"/>
         </scene>
     </scenes>
     <resources>
