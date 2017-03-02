@@ -38,13 +38,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         let path = Bundle.main.path(forResource: "music", ofType: "mp3")!
     
-        do {
+            do {
             
-            musicPlayer = try AVAudioPlayer(contentsOf: URL(string: path)!)
-            musicPlayer.prepareToPlay()
-            musicPlayer.numberOfLoops = -1
-            musicPlayer.play()
-        } catch let err as NSError {
+                musicPlayer = try AVAudioPlayer(contentsOf: URL(string: path)!)
+                musicPlayer.prepareToPlay()
+                musicPlayer.numberOfLoops = -1
+                musicPlayer.play()
+            } catch let err as NSError {
             
             print(err.debugDescription)
         }
@@ -109,11 +109,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
             return UICollectionViewCell()
         }
+    }
    
     //---
     
-        func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-            
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
             var poke: Pokemon!
             
             if inSearchMode {
@@ -133,14 +133,12 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         return 1
     }
-   
     //---
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         return CGSize(width: 105, height: 105)
-    }
-        
-    }
+        }
+    
    
     @IBAction func musicBtnPressed(_ sender: UIButton) {
         
@@ -183,7 +181,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "PoekemonDetailVC"  {
+        if segue.identifier == "PokemonDetailVC" {
             if let detailsVC = segue.destination as? PokemonDetailVC {
                 if let poke = sender as? Pokemon {
                     detailsVC.pokemon = poke
